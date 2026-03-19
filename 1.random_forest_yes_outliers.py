@@ -112,12 +112,6 @@ def engineer_features(df):
 # Path to this script's directory
 dir = os.path.dirname(os.path.abspath(__file__))
 
-# Load data
-# NO OUTLIERS (change the test path too)
-# csv_file_path = r"G:\Visual WWW\Python\1000_python_workspace_new\multi-omics_dataset_projects\csv\no_outliers\metabric_data_preprocess_no_outliers_synthetic_50000_minus_5_classes2.csv"
-
-# YES OUTLIERS (change the test path too)
-# csv_file_path = r"G:\Visual WWW\Python\1000_python_workspace_new\multi-omics_dataset_projects\csv\metabric_data_preprocess_yes_outliers_synthetic_50000_minus_5_classes.csv"
 csv_file_path = r"G:\Visual WWW\Python\1000_python_workspace_new\multi-omics_dataset_projects\csv\yes_outliers\metabric_data_preprocess_yes_outliers_synthetic_30000_minus_5_classes.csv"
 
 df_metabric = pd.read_csv(csv_file_path)
