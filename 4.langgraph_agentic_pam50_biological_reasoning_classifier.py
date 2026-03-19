@@ -738,16 +738,16 @@ if __name__ == "__main__":
 
     TRAIN_CSV = (
         sys.argv[1] if len(sys.argv) > 1
-        else r"G:\Visual WWW\Python\1000_python_workspace_new\multi-omics_dataset_projects\csv\yes_outliers\metabric_data_preprocess_yes_outliers_synthetic_30000_minus_5_classes.csv"
+        else 
     )
     TEST_CSV = (
         sys.argv[2] if len(sys.argv) > 2
-        else r"G:\Visual WWW\Python\1000_python_workspace_new\multi-omics_dataset_projects\csv\yes_outliers\metabric_data_preprocess_minus_5_classes_production.csv"
+        else
     )
     MODEL = sys.argv[3] if len(sys.argv) > 3 else "claude-sonnet-4-20250514"
     OUT   = (
         sys.argv[4] if len(sys.argv) > 4
-        else r"G:\Visual WWW\Python\1000_python_workspace_new\tampa_bay_biotech_2026_03_12\json\pam50_langgraph_results.json"
+        else 
     )
 
     results = run_pipeline(TRAIN_CSV, TEST_CSV, model=MODEL, save_json=OUT)
